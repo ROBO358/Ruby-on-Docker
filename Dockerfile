@@ -11,6 +11,8 @@ RUN bundle lock --add-platform x86_64-linux
 
 RUN bundle install
 
+WORKDIR /ruby/src
+
 # COPY . .
 
 # CMD ["./your-daemon-or-script.rb"]
