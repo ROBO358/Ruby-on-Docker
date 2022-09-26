@@ -1,0 +1,9 @@
+version: "3"
+services:
+  ruby:
+    container_name: ruby-on-docker
+    build:
+      context: .
+    volumes:
+      - ./src:/ruby/src
+    tty: true
